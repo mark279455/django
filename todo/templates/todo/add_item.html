@@ -12,7 +12,9 @@
     <h1>Add a Todo Item:</h1>
     <form method="POST" action="add">
         {% csrf_token %}
-        <div>
+
+        <!-- MANUAL FORM CREATION -->
+        <!-- <div>
             <p>
                 <label for="id_name">Name: </label>
                 <input type="text" id="id_name" name="item_name" />
@@ -23,7 +25,14 @@
                 <label for="id_done">Done: </label>
                 <input type="checkbox" id="id_done" name="done" />
             </p>
-        </div>
+        </div> -->
+
+        <!-- DJANGO AUTO FORM CREATION -->
+        <!-- AS PARAGRAPH -->
+        {{ form.as_p }}
+        <!-- AS TABLE -->
+        <!-- {{ form.as_table }} -->
+
         <div>
             <button type="submit">Add Item</button>
         </div>
