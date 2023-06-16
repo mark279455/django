@@ -26,7 +26,7 @@ development = os.environ.get('DEVELOPMENT', False)
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get(
-    'SECRET_KEY', 'django-insecure-8--ru5)lsiz&xa%i=+#@&ypu7$sov6zpjw^+73ty16@3h)b!fi')
+    'SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
